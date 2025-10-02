@@ -41,7 +41,7 @@ sudo docker build -t indikakumara/prediction-api:0.0.1 .
 sudo docker build -t indikakumara/prediction-ui:0.0.1 .
 
 
-# Check Namespace, Process IDs, etc.
+# Check Namespace, Process IDs, etc. 
 
 sudo docker inspect --format '{{.State.Pid}}' prediction-ui | pstree -p 
 
@@ -131,7 +131,7 @@ sudo iptables -t nat -L
 
  A nice article https://iximiuz.com/en/posts/docker-publish-container-ports/
 
-# Login to a container
+# Login to an container
 
 sudo docker exec -it prediction-ui /bin/bash
 
